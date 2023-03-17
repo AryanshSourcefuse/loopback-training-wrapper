@@ -22,6 +22,16 @@ const config = {
         ping: [],
       },
     },
+    {
+      template: {
+        method: 'POST',
+        url: 'http://localhost:3000/roles',
+        body: '{body}',
+      },
+      functions: {
+        createRole: ['body'],
+      },
+    },
   ],
 };
 
